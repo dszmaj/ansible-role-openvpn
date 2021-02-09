@@ -1,3 +1,8 @@
+- name: Install GPG key for EPEL
+  rpm_key:
+    key: https://dl.fedoraproject.org/pub/epel/RPM-GPG-KEY-EPEL-8
+    state: present
+
 - name: Install EPEL
   package:
     name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
