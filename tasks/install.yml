@@ -1,6 +1,6 @@
 - name: Install EPEL
   package:
-    name: epel-release
+    name: https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
     state: present
   when: ansible_distribution == "CentOS" or ansible_distribution=="RedHat"
 
